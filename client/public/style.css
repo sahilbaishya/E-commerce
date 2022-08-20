@@ -1893,6 +1893,12 @@ video {
   background-color: rgba(229, 62, 62, var(--bg-opacity));
 }
 
+.bg-myred-600 {
+  --bg-opacity: 1;
+  background-color: #ea4e4e;
+  background-color: rgba(234, 78, 78, var(--bg-opacity));
+}
+
 .bg-red-700 {
   --bg-opacity: 1;
   background-color: #c53030;
@@ -13405,6 +13411,12 @@ video {
   --text-opacity: 1;
   color: #fff5f5;
   color: rgba(255, 245, 245, var(--text-opacity));
+}
+
+.text-mypink {
+  --text-opacity: 1;
+  color: #FF8EC6;
+  color: rgba(255, 142, 198, var(--text-opacity));
 }
 
 .text-red-200 {

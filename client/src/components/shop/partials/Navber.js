@@ -30,11 +30,11 @@ const Navber = (props) => {
   return (
     <Fragment>
       {/* Navber Section */}
-      <nav className="fixed top-0 w-full z-20 shadow-lg lg:shadow-none bg-gray-800">
+      <nav className="fixed top-0 w-full z-20 shadow-lg lg:shadow-none bg-myred-600">
         <div className="m-1 md:mx-12 md:my-2 mt-2 grid grid-cols-4 lg:grid-cols-3">
           <div className="hidden lg:block col-span-1 flex text-white mt-1">
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-grey-200 cursor-pointer"
               onClick={(e) => history.push("/")}
             >
               Shop
@@ -73,7 +73,7 @@ const Navber = (props) => {
               style={{ letterSpacing: "0.10rem" }}
               className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
             >
-              Ecommerse
+              Ecommerce
             </span>
           </div>
           <div
@@ -81,7 +81,7 @@ const Navber = (props) => {
             style={{ letterSpacing: "0.70rem" }}
             className="hidden lg:block flex items-left col-span-1 text-center text-white font-bold tracking-widest uppercase text-2xl cursor-pointer"
           >
-            Ecommerse
+            Ecommerce
           </div>
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}
@@ -93,9 +93,9 @@ const Navber = (props) => {
               <svg
                 className={`${
                   location.pathname === "/wish-list"
-                    ? "fill-current text-gray-800"
+                    ? "fill-current text-white"
                     : ""
-                } w-8 h-8 text-gray-600 cursor-pointer`}
+                } w-8 h-8 text-white hover:text-gray-800 cursor-pointer`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ const Navber = (props) => {
                   title="Logout"
                 >
                   <svg
-                    className="cursor-pointer w-8 h-8 text-gray-600 hover:text-gray-800"
+                    className="cursor-pointer w-8 h-8 text-white hover:text-gray-800"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -132,7 +132,7 @@ const Navber = (props) => {
                   <div className="userDropdown absolute right-0 mt-1 bg-gray-200 rounded">
                     {!isAdmin() ? (
                       <Fragment>
-                        <li className="flex flex-col text-gray-700 w-48 shadow-lg">
+                        <li className="flex flex-col text-white w-48 shadow-lg">
                           <span
                             onClick={(e) => history.push("/user/orders")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
@@ -157,7 +157,7 @@ const Navber = (props) => {
                           </span>
                           <span
                             onClick={(e) => history.push("/user/profile")}
-                            className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
+                            className="flex space-x-2 py-2 px-8 hover:bg-white cursor-pointer"
                           >
                             <span>
                               <svg
@@ -179,7 +179,7 @@ const Navber = (props) => {
                           </span>
                           <span
                             onClick={(e) => history.push("/wish-list")}
-                            className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
+                            className="flex space-x-2 py-2 px-8 hover:bg-white cursor-pointer"
                           >
                             <span>
                               <svg
@@ -201,7 +201,7 @@ const Navber = (props) => {
                           </span>
                           <span
                             onClick={(e) => history.push("/user/setting")}
-                            className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer"
+                            className="flex space-x-1 py-2 px-8 hover:bg-white cursor-pointer"
                           >
                             <span>
                               <svg
@@ -229,7 +229,7 @@ const Navber = (props) => {
                           </span>
                           <span
                             onClick={(e) => logout()}
-                            className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
+                            className="flex space-x-2 py-2 px-8 hover:bg-white cursor-pointer"
                           >
                             <span>
                               <svg
@@ -318,7 +318,7 @@ const Navber = (props) => {
                 title="Login"
               >
                 <svg
-                  className="w-8 h-8 text-gray-600 hover:text-gray-800"
+                  className="w-8 h-8 text-white hover:text-gray-800"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -336,11 +336,11 @@ const Navber = (props) => {
             {/* Cart Modal Button */}
             <div
               onClick={(e) => cartModalOpen()}
-              className="hover:bg-gray-200 px-2 py-2 rounded-lg relative cursor-pointer"
+              className="hover:bg-grey-200 px-2 py-2 rounded-lg relative cursor-pointer"
               title="Cart"
             >
               <svg
-                className="w-8 h-8 text-gray-600 hover:text-gray-800"
+                className="w-8 h-8 text-white hover:text-gray-800"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

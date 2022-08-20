@@ -186,7 +186,7 @@ const AllImages = () => {
             );
           })
         ) : (
-          <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center text-xl font-light w-full bg-orange-200 rounded py-2">
+          <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center text-xl font-light w-full bg-red-200 rounded py-2">
             No slide image found
           </div>
         )}
